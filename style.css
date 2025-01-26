@@ -1,0 +1,102 @@
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ body{
+    /* this is recomended everytime, we start a nwe web project
+    for all the page 
+    height: cal(100vh - nav px)
+    
+    */
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)), url(img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+   
+ }
+ nav{
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0,0.1);
+    
+ }
+ nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+ }
+ /* we didnt define the height of the
+  nav-bar because we want the 
+  list item to define the height of their parents
+  */
+ nav li{
+    height: 70px;
+    
+ }
+ nav a{
+    /* to make them much the height of the nav-item */
+    height: 100%; 
+    display: flex;
+    padding: 0 30px;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+ }
+ .hideOnMobile:hover{
+    background-color: #f0f0f0;
+ }
+ /* aligning the nav-logo on the right */
+ nav li:first-child{
+    margin-right: auto;
+ }
+ .menu-btn{
+   display: none;
+ }
+ .sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    width:250px;
+    height: 100vh;
+    z-index: 999; /* to be above every elements */
+    backdrop-filter: blur(10px);  /* blur is a function for applying the glass effects */
+    background-color: rgb(255,255,255,0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+ }
+ .sidebar li{
+   height: 70px;
+ }
+ .sidebar li,.sidebar a{
+    width: 100%;
+ }
+ /* ##############     MEDIA QUERRIES      ############ */
+ @media (max-width:800px) {
+   
+   .hideOnMobile{
+      display: none;
+      
+   }
+   .menu-btn{
+      display: block;
+   }
+ }
+ @media (max-width:400px) {
+   .sidebar{
+      width: 100%;
+   }
+   .menu-btn{
+      display: block;
+   }
+  
+   
+}
+   
+

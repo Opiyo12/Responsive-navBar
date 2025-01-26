@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+   <header>
+    <nav>
+        <!-- BEGINING OF MENU SIDEBAR -->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Products</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Forum</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+        <!-- BEGINING OF NAV BAR -->
+        <ul>
+            <li>
+                <a  href="#"><img src="quill.svg" alt="logo"></a>
+            </li>
+            <li>
+                <a class="hideOnMobile" href="#">Blog</a>
+            </li>
+            <li>
+                <a  class="hideOnMobile" href="#">Products</a>
+            </li>
+            <li>
+                <a class="hideOnMobile"  href="#">About</a>
+            </li>
+            <li>
+                <a class="hideOnMobile"  href="#">Forum</a>
+            </li>
+            <li>
+                <a class="hideOnMobile"  href="#">Login</a>
+            </li>
+            <li class="menu-btn" onclick=showSidebar()>
+                <a href="#"><i  id="menu-btn" class="fa-solid fa-bars"></i></a>
+            </li>
+        </ul>
+    </nav>
+   </header>
+
+
+
+    <script>
+        function showSidebar(){
+            const sidebar= document.querySelector(".sidebar")
+            sidebar.style.display= "flex";
+        }
+        function hideSidebar(){
+            const sidebar= document.querySelector(".sidebar")
+            sidebar.style.display="none";
+        }
+    </script>
+</body>
+</html>
