@@ -1,2 +1,1 @@
-![Demo Screenshot](https://github.com/Opiyo12/Responsive-navBar/blob/main/full-page.png
-)
+![image alt](https://github.com/Opiyo12/Responsive-navBar/blob/main/screenshot.png??raw=true)
