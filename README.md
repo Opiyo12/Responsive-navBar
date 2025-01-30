@@ -1,1 +1,1 @@
-![Demo Screenshot](https://raw.githubusercontent.com/username/repository-name/main/screenshot.png)
+![Demo Screenshot](https://raw.githubusercontent.com/Opiyo12/Responsive-navBar/main/screenshot.png)
